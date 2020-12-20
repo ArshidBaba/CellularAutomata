@@ -1,6 +1,6 @@
 # import numpy as np
 # a = np.arange(15).reshape(3, 5)
-cells = [0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0]
+cells = [0,0,0,0,1,0,0,0,0]
 ruleset = [0,1,0,1,1,0,1,0]
 newcells = cells.copy()
 generation = int(input("Enter the number of generations: "))
