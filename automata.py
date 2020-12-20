@@ -1,7 +1,8 @@
 # import numpy as np
 # a = np.arange(15).reshape(3, 5)
+import time
 cells = [0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0]
-newcells = cells.copy()
+# newcells = cells.copy()
 generation = int(input("Enter the number of generations: "))
 ruleset = [0,1,0,1,1,0,1,0]
 
@@ -19,6 +20,7 @@ def rules(a, b, c):
 for g in range(generation):
     newcells = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     print(cells)
+    time.sleep(2)    
     for i in range(1,len(cells)-1):
         left = cells[i-1]
         middle = cells[i]
