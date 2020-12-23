@@ -5,7 +5,7 @@ import numpy as np
 data = np.random.rand(10, 10) * 20
 
 # create discrete colormap
-cmap = colors.ListedColormap(['red', 'blue'])
+cmap = colors.ListedColormap(['red', 'black'])
 bounds = [0,10,20]
 norm = colors.BoundaryNorm(bounds, cmap.N)
 
